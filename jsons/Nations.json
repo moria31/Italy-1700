@@ -1,38 +1,383 @@
 [
-	{
-		"name": "Aliens",
-		"leaderName": "Zyxxyz",
-		"adjective": ["alien"],
-		"startBias": ["Snow"],
-		"preferredVictoryType": "Scientific",
-		
-		"startIntroPart1": "We come in peace!",
-		"startIntroPart2": "This is an overpowered joke nation just as an example for the mods feature. Set Phasers to Obliterate!!",
-		
-		"declaringWar": "Resistance is futile! Prepare to be assimilated!",
-		"attacked": "You want to play? Very funny!",
-		"defeated": "How is it possible that those Apes hurt us? The galactic senate will take care of them.",
-		"introduction": "As superior galactic entities, you are not worthy of our attention.",
-		
-		"neutralHello": "How are you doing?",
-		"neutralLetsHearIt": ["Go on.","What do you say?","You may begin."],
-		"neutralNo": ["We absolutely refuse.","No!","I refuse."],
-		"neutralYes": ["Very good.","Of course, yes.","That is very good."],
+    //Spectator
+    {
+        "name": "Spectator",
+        "outerColor": [255,255,255]
+    },
+    //nations
+    {
+        "name": "Savoy",
+        "leaderName": "xxx",
+        "adjective": ["Akkadian"],
+        "startBias": ["Avoid [Coast]"],
+        "preferredVictoryType": "Domination",
+        "startIntroPart1": "Mighty Sargon the Great of Akkad, we prostrate ourselves before you! You are the Emperor of the Akkadians, the greatest people to ever arise along the Euphrates and Tigris rivers. From its founding around 2300 BCE, Akkad spread its dominion through a force like none of which the ancient world had ever seen, which marked, among other things, history's first standing army. Ranging from the Tarsus Mountsins to the Persian Gulf, the mighty Akkadian empire was a force to be reckoned with. Yet, you were much better than a mere warmonger, because your rule oversaw the flourishing of trade cross all of the Middle East, extending all the way to the cities of Greece. Although the curses of war and famine tore your kingdom apart after centuries of prosperity, Mesopotamia was once again transformed into a land of culture and color as the ever-growing wealth of Akkad heralded a time of peace in the forever restless realm.",
+        "startIntroPart2": "Magnificent King, you who founded the first true empire, now the world once again is in turmoil, and your slumber must end. It is time to reclaim your birthright as the legitimate king of this brave new world. Will you teach this world the art of empire building, either by peace or force? Can you once again create a dominion that will look down on all others? Can you build a civilization that will stand the test of time?",
+        "declaringWar": "If you are truly a worthy ruler yourself, then prepare for war!",
+        "attacked": "HAH! You think your puny 'empire' has any match to the strength of my empire? I'd like to see you try!",
+        "defeated": "Perhaps, you are truly hoy you rule all empires. Please, treat my people with fairness.",
+        "introduction": "Greetings. I am Sargon, the King of Sumer and the first ruler of the Akkadian Empire!",
+        "neutralHello": "Greetings.",
+        "hateHello": "What do you want, puny one?",
+        "tradeRequest": "Behold! For I am about to share the wealth of my empire!",
+        "outerColor": [70, 83, 150],
+        "innerColor": [184, 175, 118],
+        "uniqueName": "The Great Unification",
+        "uniques": [
+            "[+2 Happiness, +3 Culture, +1 Production] [in annexed cities]",
+            "[+2 Happiness, +3 Culture, +1 Production] [in puppeted cities]",
+            "[+15]% Strength <for [Land] units> <vs cities>"
+        ],
+        "cities": [
+            "Akkad","Kish","Sippar","Nuzi","Marad","Azupiranu","Eshnunna","Tell Brak","Tell Leilan","Umma",
+            "Nippur","Girsu","Uruk","Lagash","Ur","Mari","Gasul","Tuttul","Harran","Eridu",
+            "Shushan","Ebla","Tell Mozan","Tell Beydar","Gerrha","Adab","Akshak","Nineveh","Halab","Ugarit",
+            "Carchemish","Assur","Babylon","Tell Halaf"
+        ],
+        "spyNames": [
+            "Naram-Sin","Mulagunnuna","Telel","Nabua","Adini","Enheduanna","Tashlultum","Astarte","Inanna","Nin-Marki"
+        ]
+    },
+    {
+        "name": "Genoa",
+        "leaderName": "Ezana",
+        "adjective": ["Aksumite"],
+        "startBias": ["Avoid [Coast]","Hill"],
+        "preferredVictoryType": "Cultural",
+        "startIntroPart1": " ",
+        "startIntroPart2": " ",
+        "declaringWar": "I had a vision from God himself, and he has told me to smite you down!",
+        "attacked": "I have God in my side! What do you have in yours?",
+        "defeated": "So much bloodshed.. But if this is the will of God, then I must accept this cruel fate.",
+        "introduction": "It seems God has foreseen our encounter. I am Ezana, King of Aksum, but the true king of Heaven and Earth is, of course, Christ himself.",
+        "neutralHello": "May God bless your soul.",
+        "hateHello": "I do not have time to speak.",
+        "tradeRequest": "Trading it's a fine thing God has bring, don't you agree?",
+        "outerColor": [68, 33, 78],
+        "innerColor": [190, 146, 61],
+        "uniqueName": "Saint Elesbaan's Blessing",
+        "uniques": [
+            "[+1 Production, +2 Faith] from every [Quarry]",
+            "[+1 Faith] from every [Quarry] <after discovering [Theology]>"
+        ],
+        "cities": [
+            "Aksum","Adulis","Qohaito","Matara","Yeha","Hawulti","Massawa","Zeila","Lalibela","Addi Galamo",
+            "Tokonda","Tiya","Deira","Berbera","Melazo","Hawila","Fikya","Sabea","Kaskase","Debre Berhan",
+            "Adwa","Gabaza","Harar","Kubar","Tegulat","Mekele","Dahlak Kebir","Gondar","Magdala","Ankober",
+            "Jimma","Jijiga"
+        ],
+        "spyNames": [
+            "Mulu Ken","Wendimu","Li'ol","Demeke","Mulu Alem","Abebech","Zema","Mihret","Kebedech","Alemnesh"
+        ]
+    },
+    {
+        "name": "Milan",
+        "leaderName": "George Washington",
+        "adjective": ["American"],
+        "startBias": ["Avoid [Coast]"],
+        "preferredVictoryType": "Scientific",
+        "startIntroPart1": "Welcome President Washington! You lead the industrious American civilization! Formed in the conflagration of revolution in the 18th century, within a hundred years, the young nation became embroiled in a terrible civil war that nearly tore the country apart, but it was just a few short years later in the 20th century that the United States reached the height of its power, emerging triumphant and mighty from the two terrible wars that destroyed so many other great nations. The United States is a nation of immigrants, filled with optimism and determination. They lack only a leader to help them fulfill their promise.",
+        "startIntroPart2": "President Washington, can you lead the American people to greatness? Can you build a civilization that will stand the test of time?",
+        "declaringWar": "Your wanton aggression leaves us no choice. Prepare for war!",
+        "attacked": "You have mistaken our love of peace for weakness. You shall regret this!",
+        "defeated": "The day...is yours. I hope you will be merciful in your triumph.",
+        "introduction": "The people of the United States of America welcome you.",
+        "neutralHello": "Good day.",
+        "hateHello": "Well?",
+        "tradeRequest": "Is the following trade of interest to you?",
+        "outerColor": [ 28,51,119],
+        "innerColor": [255,255,255],
+        "uniqueName": "Manifest Destiny",
+        "uniques": [
+            "[+1] Sight <for [{Military} {Land}] units>",
+            "[-50]% Gold cost of acquiring tiles [in all cities]"
+        ],
+        "cities": [
+            "Washington","New York","Boston","Philadelphia","Atlanta","Chicago","Seattle","San Francisco","Los Angeles","Houston",
+            "Portland","St. Louis","Miami","Buffalo","Detroit","New Orleans","Baltimore","Denver","Cincinnati","Dallas",
+            "Cleveland","Kansas City","San Diego","Richmond","Las Vegas","Phoenix","Albuquerque","Minneapolis","Pittsburgh","Oakland",
+            "Tampa Bay","Orlando","Tacoma","Santa Fe","Olympia","Hunt Valley","Springfield","Palo Alto","Centralia","Spokane",
+            "Jacksonville","Savannah","Charleston","San Antonio","Omaha","Honolulu","Anchorage","Sacramento","Salt Lake City","Reno",
+            "Boise","Milwaukee","Santa Cruz","Monterey","Santa Monica","Little Rock","Columbus","Le Bam"
+        ],
+        "spyNames": [
+            "Cousin","Felix","Dennis","Edward","Prof. Rex","Eliza","Mary","Virginia","Scarlett","Barbara"
+        ]
+    },
+    {
+        "name": "Mantua",
+        "leaderName": "Eva Peron",
+        "adjective": ["Argentine"],
+        "startBias": ["Avoid [Coast]"],
+        "preferredVictoryType": "Scientific",
+        "startIntroPart1": "Salutations, Eva Perón, spiritual leader of the Argentinian nation and wife to Juan Perón. Yours is the second largest country in Latin America, and its name has derived from the rumors of the existence of silver mountains; what is certainly rich is history in both pre-columbian and republican eras. With the primitive Hispanic American reality fractured in La Plata Basin due to immigration, its inhabitants have come to be somewhat deal with all the dangers but also with all the advantages of that condition: because of their European roots, they deeply linked the nation with the enduring values of the Old World; and because of their condition of colonials, they link themselves to the rest of the continent, through the folklore of the interior and the old Castilian that unifies the people, feeling somehow the vocation of the Patria Grande San Martín and Bolívar once imagined.",
+        "startIntroPart2": "Evita, your people still remember your deeds to the people in the darkest times, because you defended the rights of Descamisados and Women in your great nation. Now it falls to you to build a nation of hope and justice for everyone. Will you answer the call? Can you build a civilization that will stand the test of time?",
+        "declaringWar": "Prepare for war!",
+        "attacked": "You shall regret this!",
+        "defeated": "The victory is yours.",
+        "introduction": "Welcome, mighty leader.",
+        "neutralHello": "Greetings.",
+        "hateHello": "What do you want?",
+        "tradeRequest": "Better hurry, I may change my mind.",
+        "outerColor": [64, 138, 178],
+        "innerColor": [244, 244, 86],
+        "uniqueName": "Pride of the People",
+        "uniques": [
+            "[-50]% construction time for [Pasture] improvements",
+            "[-50]% construction time for [Farm] improvements"
+        ],
+        "cities": [
+            "Buenos Aires","La Plata","Cordoba","Jujuy","Catamarca","La Rioja","Formosa","Parana","Posadas","Neuquen",
+            "Salta","San Juan","San Luis","Santa Fe","Santiago del Estero","Ushuaia","Tucuman","Resistencia","Rawson","Santa Rosa","Viedma",
+            "Ushuaia"
+        ],
+        "spyNames": [
+            "Cortázar","Fontanarrosa","Borges","Laiseca","Crossa","Aira","Piazzolla","Valcárcel","Shakespear","Sabato"
+        ]
+    },
+    {
+        "name": "Modena",
+        "leaderName": "Tiridates III",
+        "adjective": ["Armenian"],
+        "startBias": ["Avoid [Coast]","Hill","Avoid [Jungle]"],
+        "preferredVictoryType": "Domination",
+        "startIntroPart1": "Welcome, O magnificent and enlightened King Tiridates III, descendant of the great and ancient Kingship of Armenia. Your country's history stretches far back, its origins tracing from the northernmost satrapies of the mighty Achaemenid Dynasty. For centuries, the Kingdom lay at the crossroads of power, between the two empires of Rome in the West and Parthinia in the East, who would wage bloody war for the right to subjugate her beneath them. In the 3rd century AD, the throne of Armenian Kings would fall to the occupation of the Sassanid Persians, successors of Parthia, but, with the aid of the Roman Emperor Aurelian, it would be restored unto you, Armenia's rightful King. And as her King, you would go on to proclaim Armenia's devotion as the first Christian state in the world, several dozen years prior the proclamation of Constantine the Great.",
+        "startIntroPart2": "Wise Prince, the Kingdom of Armenia must rise once more, and with it must come the defense of the faith that you would call your own. Can you bring to the Armenian people great piety and power immeasurable? Can you carve an empire into the mountains that rise to the heavens above your Kingdom? Can you build a civilization that will stand the test of time?",
+        "declaringWar": "The angels's trumpet has blown! The holy blades of my soldiers shall be your demise!",
+        "attacked": "You wish to disturb our peace? Then come, let's see if you have the will to destroy my kingdom!",
+        "defeated": "Has God decided to forsaken us?",
+        "introduction": "Do you serve the same God as I do? Or are you just another heretic?",
+        "neutralHello": "Greetings.",
+        "hateHello": "What do you want?",
+        "tradeRequest": "Perhaps we should exchange resources, for the better of our kingdoms.",
+        "outerColor": [45, 36, 95],
+        "innerColor": [223, 199, 143],
+        "uniqueName": "Splendor of the Caucasus",
+        "uniques": ["[+1 Food, +2 Production, +1 Gold] from every [Mountain]"],
+        "cities": [
+            "Yerevan","Artaxata","Tigranocerta","Dvin","Ararat","Kars","Shirakavan","Vagharshapat","Bagaran","Yervandashat",
+            "Stepanakert","Ani","Sis","Tushpa","Gyumri","Vanadzor","Abovyan","Kapan","Hrazdan","Ijevan",
+            "Gavar","Goris","Charentsavan","Masis","Artik","Ashtarak","Sevan","Diliijan","Alaverdi"
+        ],
+        "spyNames": [
+            "Solhofaat","Khenzeer","Zarafah","Temsaah","Abyadh","Mostafa","Yusuf","Waddah","Sameera","Gamal"
+        ]
+    },
+    {
+        "name": "Parma",
+        "leaderName": "Ashurbanipal",
+        "adjective": ["Assyrian"],
+        "startBias": ["Avoid [Coast]","Avoid [Tundra]"],
+        "preferredVictoryType": "Domination",
+        "startIntroPart1": "The people bow to your esteemed will, o wise and illustrious King Ashurbanipal of Assyria. Across the world, you are known as both a scholar and a warrior, and yet the legends represent merely a glimmer of your true ambition. Although your enemies cowered at the thought of your ferocity in conquest, you were most proud of your intellectual pursuits. Your thirst for knowledge led to your establishment of the royal library at Nineveh, which came to represent one of the greatest collections of ancient texts and tablets found anywhere in the world - securing your legacy as one of Assyria's greatest kings.",
+        "startIntroPart2": "Wise and fearsome king, the time has come for you to return the kingdom of Assyria to its greatest heights. Will you once again strive to acquire the knowledge and histories of all the world's peoples? Can you build a civilization that will stand the test of time?",
+        "declaringWar": "I fear there is no other choice but to remove you from this world!",
+        "attacked": "I think you will come to regret this decision...most unwise.",
+        "defeated": "We may be defeated, but our legacy will live on in the written word!",
+        "introduction": "I welcome you to the great kingdom of Assyria...have you come to view my library?",
+        "neutralHello": "?",
+        "hateHello": "?",
+        "tradeRequest": "Will you consider a trade?",
+        "outerColor": [255,246,194],
+        "innerColor": [191,126,9],
+        "uniqueName": "Siege Warfare",
+        "uniques": [
+            "[+1] Movement <for [Siege] units>",
+            "Free [Great Writer] appears <upon discovering [Philosophy] technology>",
+            "Instantly provides [1] [Great Work of Writing] <upon constructing [Royal Library] [in capital]>"
+        ],
+        "cities": [
+            "Assur","Nineveh","Nimrud","Kar-Tukulti-Ninurta","Dur-Sharrukin","Halab","Carchemish","Kanesh","Harran","Imgur-Enlil",
+            "Shubat-Enlil","Qatna","Sareisa","Sam al","Qarqar","Til Barsip","Sultantepe","Erbil","Hamath","Guzana",
+            "Turuspa","Nasibina","Arpad","Kelashin","Tadmor","Urartu","Sabata","Hit"
+        ],
+        "spyNames": [
+            "Adapa","Kubaba","Nabu","Nergal","Ninlil","Ninurta","Nisroch","Shamash","Pazuzu","Qingu"
+        ]
+    },
+    {
+        "name": "Tuscany",
+        "leaderName": "Henry Parker",
+        "adjective": ["Australian"],
+        "startBias": ["Coast"],
+        "preferredVictoryType": "Cultural",
+        "startIntroPart1": "Greetings, most wise and prudent Henry Parker, father of the Australian Federation. Australia truly is a unique and ancient land, more so than any other, for its lands abound in nature's gifts and its shores have beckoned, welcomed, and harbored immigrants from afar for over 50,000 years. By the time you arrived in Sydney as an English immigrant in 1839, Australia was divided into thriving British colonies of undeniably vital significance. By 1889, as premier you had led the colony of New South Wales five times to achieve many great things that undoubtedly improved the lives of many. You will always be remembered, however, in the hearts of Australians, for being instrumental in the process of federating the Australian colonies into a single united nation, earning you the humble title of \"The father of the Australian Federation\". Thanks to your efforts, Australia today remains one of the most wealthy, prosperous, and modern countries in the developed world, and truly a sight to behold.",
+        "startIntroPart2": "O Henry Parker, your people call for you in joyful strains once more. Will you make the rest the world hear the thunder of Australia? Will you build a civilization that stands the test of time?",
+        "declaringWar": "The Commonwealth of Australia formally declare war on you!",
+        "attacked": "Australia will not sit idly, we shall defend our homeland 'till our dying breath!",
+        "defeated": "I die happily, knowing that Australia was once a proud and mighty nation far exceeding the ideals of your unequivocally barbaric ways.",
+        "introduction": "The Commonwealth Of Australia greets you, fellow nation. I am Prime Minister Henry Parker and I look forward to cooperate with you!",
+        "neutralHello": "Welcome, dear friend.",
+        "hateHello": "Step forward, vile barbarian.",
+        "tradeRequest": "Will you accept this deal?",
+        "outerColor": [0, 91, 65],
+        "innerColor": [225, 148, 26],
+        "uniqueName": "Dreamtime",
+        "uniques": [
+            //"[+1 Faith] from every [{non-[Flood plains]} {Desert}]",
+            "[+5 Faith] from every [Natural Wonder]",
+            "Gain [10] [Faith] <upon discovering a Natural Wonder>"
+        ],
+        "cities": [
+            "Canberra","Sydney","Melbourne","Brisbane","Gold Coast","Adelaide","Perth","Newcastle","Sunshine Coast","Wollongong",
+            "Hobart","Geelong","Cairns","Darwin","Toowoomba","Albury","Queanbeyan","Rockhampton","Bunbury","Bundaberg",
+            "Wagga Wagga","Bendigo","Ballarat","Mittagong"
+        ],
+        "spyNames": [
+            "Metztli","Xitllali","Chimalli","Quauhtli","Teyacapan","Yaotl","Coatl","Huitzilin","Itzli","Tepin"
+        ]
+    },
+    {
+        "name": "Papal State",
+        "leaderName": "Urban II",
+        "adjective": ["Vatican"],
+        "startBias": ["Avoid [Coast]"],
+        "preferredVictoryType": "Diplomatic",
+        "startIntroPart1": " ",
+        "startIntroPart2": " ",
+        "declaringWar": "Prepare for war!",
+        "attacked": "You shall regret this!",
+        "defeated": "The victory is yours.",
+        "introduction": "Welcome, mighty leader.",
+        "neutralHello": "Greetings.",
+        "hateHello": "What do you want?",
+        "tradeRequest": "Better hurry, I may change my mind.",
+        "outerColor": [243,243,38],
+        "innerColor": [130,130,130],
+        "uniqueName": "The Holy See",
+        "uniques": [
+            "[+1 Culture, +1 Food, +1 Gold] from every [Great Improvement]",
+            "Gain a free [Courthouse] [in annexed cities] <in cities following our religion>",
+            "Gain a free [Courthouse] [in puppeted cities] <in cities following our religion>"
+        ],
+        "cities": [
+            "Vatican City","Benevento","Pontecorvo","San Marino","Terracina","Narni","Spoleto","Assisi","Arpino","Perugia",
+            "Macerata","Ancona","Forli","Rimini","Ascoli","Pesaro","Ferrara","Latina","Frosinone","Rieti",
+            "Terni","Arezzo"
+        ],
+        "spyNames": [
+            "Flavius","Regula","Servius","Lucia","Cornelius","Licina","Canus","Serpens","Agrippa","Brutus"
+        ]
+    },
+    {
+        "name": "Spain",
+        "leaderName": "Isabella",
+        "adjective": ["Spanish"],
+        "startBias": ["Coast"],
+        "preferredVictoryType": "Domination",
+        "startIntroPart1": "Blessed Isabella, servant of God, holy queen of Castille and Leòn! Your people greet and welcome you. You are the ruler of Spain, a beautiful and ancient country at the crossroads of the world between Europe and Africa, one shor on the Mediterranean and the other on the mighty Atlantic Ocean. The Spanish are a multicultural people with roots in the Muslim and Christian worlds. A seafaring race, Spanish explorers found and conquered much of the New World, and, for many centuries, its gold and silver brought Spain unrivalled wealth and power, making the Spanish court the  envy of the world.",
+        "startIntroPart2": "O fair and virtuous Isabella! Will you rebuld the Spanish empire and show the world again the greatness of your people? Will your take up the mantle of the holy monarchy, and vanquish your foes under heaven's watchful eyes? Your adoring subjects await your command! Will you build a civilization that stands the test of time?",
+        "declaringWar": "God will probably forgive you... but I shall not. Prepare for war.",
+        "attacked": "Repugnant spawn of the devil! You will pay!",
+        "defeated": "If my defeat is, without any doubt, the will of God, then I will accept it.",
+        "introduction": "God blesses those who deserve it. I am Isabel of Spain.",
+        "neutralHello": "Greetings.",
+        "hateHello": "Well?",
+        "tradeRequest": "I hope this deal will receive your blessing.",
+        "outerColor": [102,0,0],
+        "innerColor": [255,102,102],
+        "uniqueName": "Seven Cities of Gold",
+        "uniques": [
+            "Gain [100] [Gold] (modified by game speed) <upon discovering a Natural Wonder>",
+            "[+1 Happiness] for every known Natural Wonder",
+            "[+100]% Yield from every [Natural Wonder]"
+        ],
+        "cities": [
+            "Madrid","Barcelona","Seville","Cordoba","Toledo","Santiago","Salamanca","Murcia","Valencia","Zaragoza","Pamplona",
+            "Vitoria","Santander","Asturias","Jaen","Logrono","Valladolid","Palma","Teruel","Almeria","Leon","Zamora","Mida",
+            "Lugo","Alicante","Cadiz","Eiche","Alcorcon","Burgos","Vigo","Badajoz","La Coruna","Oviedo","Bilbao",
+            "San Sebastian","Granada","Merida","Huelva","Ibiza","Las Palmas","Tenerife"
+        ],
+        "spyNames": [
+            "Rodrigo","Esmeralda","Leon","Mathilda","Ramona","Señor X","Topolino","Serpiente","Garcia","El Lobo"
+        ]
+    },
+    {
+        "name": "Venice",
+        "leaderName": "Enrico Dandolo",
+        "adjective": ["Venetian"],
+        "startBias": ["Coast"],
+        "startIntroPart1": "Greetings, most astute Doge Enrico Dandolo of Venice, master of statecraft and shrewd negotiator. Although you rose to power late in life, old age did little to slow your cunning or ambition, as you deftly managed the bustling commercial center of Venice during a time of great instability. In aligning yourself with the Fourth Crusade, you carefully gained a strategic advantage and used the Crusaders to reacquire lost territory for Venice. Your role in guiding the Crusaders during the sacking of Constantinople led to an even greater expansion of your power, and secured your legacy throughout history.",
+        "startIntroPart2": "Most insightful and cunning Doge, Venice once again requires the service of a skilled leader, one who can bring the republic back to the forefront of world affairs. Can you establish your nation through careful trade, or will you work to conquer your enemies through diplomacy? Can you build a civilization that will stand the test of time?",
+        "declaringWar": "When you will be gone, Sir, there will be more for me!",
+        "attacked": "You have revealed your purposes too early, my friend!",
+        "defeated": "A wrong calculation, on my part.",
+        "introduction": "Welcome to Venice. I am Doge Enrico Dandolo.",
+        "neutralHello": "Greetings.",
+        "hateHello": "You! What do you want?",
+        "tradeRequest": "This offer won't be valid for a lot of time, think about it.",
+        "outerColor": [105,34,172],
+        "innerColor": [255,254,231],
+        "uniqueName": "Serenissima",
+        "uniques": [
+            "Provides [1] [Trade Route] <upon discovering [Compass] technology>",
+            "Free [Cargo Ship] appears <upon discovering [Compass] technology>"
+        ],
+        "cities": [
+            "Venice","Ragusa","Candia","Zara","Durazzo","Tessalonica","Limassol","Patras","Nicosia","Spalato",
+            "Veroz","Ravenna","Negroponte","Athens","Burano","Leonessa","Cerigo","Corfu","Epirus","Zante"
+        ],
+        "spyNames": [
+            "Gasparo","Giosafat","Ambrogio","Niccolo","Marino","Cesare","Francesco","Giovanni","Bertolome","Filomena"
+        ]
+    },
+    
 
-		"hateHello": "What do you want now?",
-		"hateLetsHearIt": ["Speak!","What do you say?","Go on."],
-		"hateNo": ["That is not possible!","We are not agreeing to that!","I beg your pardon?"],
-		"hateYes": ["That is fine.","That is good enough.","Very well..."],
-		
-		"afterPeace": "Very well, all that fighting was getting boring anyway.",
-		"tradeRequest": "We bestow you the honor of this trade offer.",
+    //City-States
+    {
+        "name": "Habsburg",
+        "adjective": ["xxx"],
+        "cityStateType": "Militaristic",
+        "declaringWar": "We have wanted this for a LONG time. War it shall be.",
+        "attacked": "Very well, we will kick you back to the ancient era!",
+        "defeated": "This isn't how it is supposed to be!",
+        "outerColor": [0, 0, 0],
+        "innerColor": [128, 179, 255],
+        "uniques": [],
+        "cities": ["Vienna"]
+    },
+    {
+        "name": "Ottoman Empire",
+        "adjective": ["Ottoman"],
+        "cityStateType": "Militaristic",
+        "declaringWar": "We have wanted this for a LONG time. War it shall be.",
+        "attacked": "Very well, we will kick you back to the ancient era!",
+        "defeated": "This isn't how it is supposed to be!",
+        "outerColor": [0, 0, 0],
+        "innerColor": [255, 217, 143],
+        "uniques": [],
+        "cities": ["Sarajevo"]
+    },
+    {
+        "name": "Ragusa",
+        "adjective": ["xxx"],
+        "cityStateType": "Mercantile",
+        "declaringWar": "We have wanted this for a LONG time. War it shall be.",
+        "attacked": "Very well, we will kick you back to the ancient era!",
+        "defeated": "This isn't how it is supposed to be!",
+        "outerColor": [0, 0, 0],
+        "innerColor": [230, 166, 82],
+        "uniques": [],
+        "cities": ["Ragusa"]
+    },
+    {
+        "name": "Tunisia",
+        "adjective": ["xxx"],
+        "cityStateType": "Maritime",
+        "declaringWar": "We have wanted this for a LONG time. War it shall be.",
+        "attacked": "Very well, we will kick you back to the ancient era!",
+        "defeated": "This isn't how it is supposed to be!",
+        "outerColor": [0, 0, 0],
+        "innerColor": [255, 255, 43],
+        "uniques": [],
+        "cities": ["Tunis"]
+    },
 
-		"outerColor": [16,16,16],
-		"innerColor": [255,200,200],
-		"unique": "MANIFEST_DESTINY",
-		"cities": ["The Hive","Q'Throczan","Q'Chovex","Q'Imphet","Q'Omphead","Q'Grecoks","Q'Vrelzieks","Q'Vronens","Q'Aerlae",
-			"Q'Phulnoith","Q'Creved","Q'Xirqen","Q'Gax","Q'Threqals","Q'Bhilmuk","Q'Mazea","Q'Zomirs","Q'Drorkrex","Q'Honkrath",
-			"Q'Zulgra","Q'Vahars","Q'Crindith","Q'Raavraes","Q'Bhoknais","Qho'Qru","Q'Dateatz","Q'Elnad","Q'Izien","Qol'Ell",
-			"Q'Dhihien","Q'Naquiel","Q'Ugneon","Q'Straquks","Q'Nulptr","Q'Ohfahl"]
-	}
+    //Barbarian
+    {
+        "name": "Barbarians",
+        "outerColor": [0,0,0],
+        "innerColor": [184,0,0],
+        "uniques": ["Can only heal by pillaging"]
+    }
 ]
